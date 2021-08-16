@@ -16,7 +16,7 @@ postgres_exporter_home_manage: false
 postgres_exporter_datasource: "user=postgres host=/var/run/postgresql/ sslmode=disable"
 postgres_exporter_queries: "queries.yml"
 postgres_exporter_flags:
-  - '--auto-discover-databases'
+  #   - '--auto-discover-databases'
   - '--extend.query-path={{ postgres_exporter_home }}/queries.yml'
 
 postgres_exporter_config_file: /etc/default/postgres_exporter
